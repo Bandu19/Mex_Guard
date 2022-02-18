@@ -105,6 +105,11 @@ header .logo {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, auto);
   position: relative;
+
+  background: url(./assets/img/background-cover.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .cover .container_info {
@@ -150,4 +155,33 @@ header .logo {
 
 .cover input[type="button"]:hover {
   box-shadow: 1px 1px 40px -3px #20202085;
+}
+
+/****IMAGEN****/
+
+.contact_vector {
+  position: relative;
+}
+
+.container_vector img {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  width: 700px;
+  /*Nuevo*/
+  animation: move_vector 6s ease-in-out infinite;
+}
+
+/*Heyframes*/
+
+@keyframes move_vector {
+  0% {
+    transform: translateY(10px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
