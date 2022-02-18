@@ -37,7 +37,6 @@ header .logo {
 }
 .logo img {
   height: 100px;
-  padding: 4px 0;
 }
 /*En duda*/
 .container_nav {
@@ -65,11 +64,11 @@ header .logo {
   color: #fff;
 }
 .container_header nav .how:hover {
-  background: #f93535;
+  background: #df0431;
   color: #fff;
 }
 .container_header nav .contact:hover {
-  background: #f93535;
+  background: #df0431;
   color: #fff;
 }
 
@@ -101,15 +100,54 @@ header .logo {
 .container_cover {
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
   position: relative;
 }
 
-.cover h1 {
+.cover .container_info {
+  max-width: 500px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.cover .container_info h1 {
   max-width: 400px;
   font-size: 50px;
   font-weight: 900;
   color: #373737;
+}
+
+.cover h2 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #df0431;
+  margin-top: -10px;
+}
+
+.cover p {
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+  color: #373737;
+}
+
+.cover input[type="button"] {
+  padding: 10px 40px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  background: #df0431;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px -5px #20202049;
+  cursor: pointer;
+  transition: box-shadow 500ms;
+}
+
+.cover input[type="button"]:hover {
+  box-shadow: 1px 1px 40px -3px #20202085;
 }
