@@ -1,0 +1,115 @@
+* {
+  text-decoration: none;
+}
+html,
+body {
+  margin: 0;
+  background: white;
+  color: #000;
+  font-family: "Roboto Serif", sans-serif;
+  box-sizing: border-box;
+}
+/****   HEADER   ****/
+
+header {
+  width: 100%;
+  max-width: 120%;
+  height: 100px;
+  position: fixed;
+  margin: 15px 0;
+  /*Nuevo*/
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+.container_header {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  padding: 4px 0;
+}
+/*En duda*/
+.container_nav {
+  position: relative;
+  height: 100%;
+  align-self: center;
+}
+.container_header nav a {
+  width: 100px;
+  margin: 0 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 15px 20px;
+  transition: all 0.5s ease-in;
+}
+.container_header nav .home {
+  background: #f93535;
+}
+.container_header nav .home:hover {
+  background: #f93535;
+  color: #fff;
+}
+.container_header nav .bout:hover {
+  background: #f93535;
+  color: #fff;
+}
+.container_header nav .how:hover {
+  background: #f93535;
+  color: #fff;
+}
+.container_header nav .contact:hover {
+  background: #f93535;
+  color: #fff;
+}
+
+.container_header nav ul {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 1fr;
+  /*DUDAS*/
+}
+
+.container_header nav ul li {
+  list-style: none;
+}
+
+.container_header nav ul li a {
+  color: #373737;
+  font-size: 14px;
+}
+
+/**COVER - PARA LA PORTADA**/
+
+.cover {
+  width: 100%;
+  max-width: 120%;
+  margin-top: 8rem;
+}
+
+.container_cover {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+
+.cover h1 {
+  max-width: 400px;
+  font-size: 50px;
+  font-weight: 900;
+  color: #373737;
+}
