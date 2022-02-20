@@ -16,11 +16,12 @@ header {
   max-width: 120%;
   height: 100px;
   position: fixed;
-  margin: 15px 0;
   /*Nuevo*/
   top: 0;
   right: 0;
   z-index: 100;
+
+  transition: all 400ms;
 }
 .container_header {
   max-width: 1200px;
@@ -36,7 +37,8 @@ header .logo {
   align-items: center;
 }
 .logo img {
-  height: 100px;
+  height: 79px;
+  padding: 10px 10px;
 }
 /*En duda*/
 .container_nav {
@@ -87,6 +89,12 @@ header .logo {
 .container_header nav ul li a {
   color: #373737;
   font-size: 14px;
+}
+/*CSS con JAVASCRIPT*/
+.nav_mod {
+  height: 90px;
+  box-shadow: 1px 1px 80px 40px #00000010;
+  background: white;
 }
 
 /**COVER - PARA LA PORTADA**/
@@ -173,7 +181,7 @@ header .logo {
 }
 
 /*Heyframes*/
-
+/*Animación*/
 @keyframes move_vector {
   0% {
     transform: translateY(10px);
