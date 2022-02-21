@@ -157,7 +157,6 @@ header .logo {
 }
 
 .cover .container_info {
-  max-width: 500px;
   margin-top: 20px;
   z-index: 2;
 }
@@ -210,10 +209,12 @@ header .logo {
 .container_vector img {
   position: absolute;
   bottom: 10px;
-  right: 0px;
+  /* right: 0px; */
   width: 700px;
   /*Nuevo*/
   animation: move_vector 6s ease-in-out infinite;
+  /**/
+  transition: all 300ms;
 }
 
 /*Heyframes*/
@@ -229,8 +230,30 @@ header .logo {
     transform: translateY(10px);
   }
 }
+@media screen and (max-width: 931px) {
+  .container_vector img {
+    left: 280px;
+  }
+}
+
 /*MEDIA QUERY*/
 @media screen and (max-width: 837px) {
+  .container_cover {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .container_info {
+    text-align: center;
+  }
+  .cover .container_info h1 {
+    max-width: none;
+  }
+  .container_vector img {
+    width: 78%;
+    left: 95px;
+  }
+
   .btn__menu {
     display: flex;
   }
@@ -254,4 +277,8 @@ header .logo {
     margin: 20px 0px;
     text-align: center;
   }
+  /* .container_vector img {
+    transform: scale(0);
+    animation: none;
+  } */
 }

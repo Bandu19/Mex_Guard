@@ -26,3 +26,11 @@ function mostrar_menu() {
   body.classList.toggle("move_content");
   nav.classList.toggle("move_nav");
 }
+
+window.addEventListener("risize", () => {
+  if (window.innerWidth > 760) {
+    menu.classList.remove("move_content");
+    body.classList.remove("move_content");
+    nav.classList.remove("move_nav");
+  }
+});
