@@ -17,9 +17,9 @@ window.onscroll = () => {
 
 document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
 
-menu = document.getElementById("header");
-body = document.getElementById("container_all");
-nav = document.getElementById("nav"); //Obtienes el id
+const menu = document.getElementById("header");
+const body = document.getElementById("container_all");
+const nav = document.getElementById("nav"); //Obtienes el id
 
 function mostrar_menu() {
   menu.classList.toggle("move_content");
