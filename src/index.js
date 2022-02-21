@@ -14,3 +14,15 @@ window.onscroll = () => {
     header.classList.remove("nav_mod");
   }
 };
+
+document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
+
+menu = document.getElementById("header");
+body = document.getElementById("container_all");
+nav = document.getElementById("nav"); //Obtienes el id
+
+function mostrar_menu() {
+  menu.classList.toggle("move_content");
+  body.classList.toggle("move_content");
+  nav.classList.toggle("move_nav");
+}
