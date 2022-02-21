@@ -1,4 +1,4 @@
-// import "./styles.css";
+import "./styles.css";
 
 window.onscroll = () => {
   //Datos que va almacenando en el scroll(nav)
