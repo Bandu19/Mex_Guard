@@ -91,6 +91,30 @@ header .logo {
   align-items: center;
   color: #fff;
 }
+.container_grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  font-weight: 800;
+}
+
+.hero_subtitle {
+  text-align: center;
+  letter-spacing: 5px;
+}
+.hero_subtitle_2 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+.hero_subtitle_3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.hero_subtitle_4 {
+  font-style: italic;
+  text-align: end;
+}
 
 .hero__wave {
   position: absolute;
