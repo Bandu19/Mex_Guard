@@ -156,3 +156,46 @@ header .logo {
   width: 100%;
   height: 21%;
 }
+
+/********MAIN************/
+
+.main_div_section {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 100px;
+  grid-template-areas:
+    "vision vision"
+    "mision mision";
+}
+.main_div_section_child {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-bottom: 100px;
+  grid-template-areas: "vision vision";
+}
+.section_menu {
+  grid-column: span 2;
+}
+
+.item {
+  border-radius: 8px;
+}
+
+.main_div_section p {
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+.main_section_div_child p {
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.about__img img {
+  border-radius: 8px;
+}

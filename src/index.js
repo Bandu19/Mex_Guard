@@ -2,8 +2,8 @@
 
 window.onscroll = () => {
   scroll = document.documentElement.scrollTop;
-  header = document.querySelector(".content_ani");
-  h1 = document.querySelector(".color_letter");
+  const header = document.querySelector(".content_ani");
+  const h1 = document.querySelector(".color_letter");
 
   if (scroll > 30) {
     header.classList.add("nav_mod");
