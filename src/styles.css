@@ -114,8 +114,25 @@ header .logo {
   font-weight: inherit;
 }
 
-.items--cta {
-  border: 1px solid #fff;
+.items--cta,
+.items--cta2,
+.items--cta4 {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 300ms;
+}
+
+.items--cta:hover,
+.items--cta2:hover,
+.items--cta4:hover {
+  border: 2px solid #db0334;
+  opacity: 0.8;
+}
+
+.items--cta1,
+.items--cta3,
+.items--cta5 {
+  border: 2px solid #f2f2f2;
+  opacity: 1;
 }
 
 .hero_container {
